@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+  <h1 stborder: 2PX solid black; class="text-green-500 font-bold">
+    Style interne :
+  </h1>
+  <p>Il est aussi possible de taper du CSS directement à l’intérieur même du fichier
+    HTML, entre les balises <span style="color: red; ">&lt;/head&gt; et &lt;/head&gt;</span></p>
+  <p> Vous devrez y mettre une balise &lt;/style&gt;à l’intérieur, comme ceci :</p>
+
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">HTML:</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code1">📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red; ">&lt;html&gt;</span>
+<span style="color: red; ">&lt;head&gt;</span>
+  <span style="color: red; ">&lt;meta charset="utf-8" /&gt;</span>
+  <span class="mb-5"><span style="color: red; ">&lt;title&gt;</span>Exemple de CSS dans le header<span style="color: red; ">&lt;/title&gt;</span> </span>     
+  <span style="color: rgb(47, 255, 154); ">&lt;style&gt;</span>
+    <span><strong>/* Vous taperez votre code CSS ici */</strong></span>
+  <span class="mb-5" style="color:rgb(47, 255, 154); ">&lt;/style&gt;</span>
+<span style="color: red; ">&lt;/head&gt;</span>
+<span style="color: red; ">&lt;body&gt;</span>
+<span style="color: red; ">&lt;/body&gt;</span>
+<span style="color: red; ">&lt;/html&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

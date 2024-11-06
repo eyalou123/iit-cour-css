@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h2 style="color: blueviolet;" class="mb-5"><strong> pseudo-classes</strong></h2>
+    <p><strong>Au passage de la souris :</strong></p>
+    <p>
+        <span style="color: red;">"a:hover"</span> : Quand la souris est sur le lien" (quand on pointe dessus).<br><br>
+
+        <span style="color: red;">a:hover</span> <span style="color: green;">{</span><br>
+        <span style="color: green;">text-decoration</span>: <span style="color: blue;">underline</span>;
+        /*Le lien deviendra souligné quand on pointera dessus */<br>
+        <span style="color: green;">color</span>: <span style="color: blue;">green</span>;
+        /* Le lien sera écrit en vert quand on pointera dessus */<br>
+        <span style="color: green;">}</span><br>
+    </p>
+    <ul class="list-disc list-inside mb-10" style="margin-top: 25px">
+        <li>Le pseudo-classe <span style="color: blue;">:active</span> permet d’appliquer un style particulier au moment
+            du clic.</li>
+        <li>Le pseudo-classe <span style="color: blue;">:visited</span> permet d’appliquer un style au lien déjà visité.
+        </li>
+    </ul>
+    <p>
+        <span style="color: red;">a:active</span>
+        /* Quand le visiteur clique sur le lien */<span style="color: green;">{</span><br>
+        <span style="color: green;">background-color</span>: <span style="color: blue;">#FFCC66</span>;
+        <span style="color: green;">}</span><br><br>
+        <span style="color: red;">a:hover</span> /* Quand le visiteur pointe sur le lien */
+        <span style="color: green;">{</span><br>
+        <span style="color: green;">text-decoration</span>:
+        <span style="color: blue;">underline</span>; <span style="color: green;">color</span>:
+        <span style="color: blue;">green</span>; <span style="color: green;">}</span><br><br>
+
+        <span style="color: red;">a:visited</span> <span style="color: green;">{</span><br>
+        <span style="color: green;">color</span>: <span style="color: blue;">#00FF00</span>;
+        <span style="color: green;">}</span><br><br>
+
+        <span style="color: red;">a</span> /* Lien normal */ <span style="color: green;">{</span><br>
+        <span style="color: green;">text-decoration</span>: <span style="color: blue;">none</span>;
+        <span style="color: green;">color</span>: <span style="color: red;">red</span>;
+        <span style="color: green;">font-style</span>: <span style="color: blue;">italic</span>;
+        <span style="color: green;">}</span><br>
+    </p>
+
+</body>
+
+</html>

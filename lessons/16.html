@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h2 style="color: blueviolet;" class="mb-2"><strong>Les majuscules en CSS</strong></h2>
+    <p class="mb-5">La propriété <span style="color: red;">text-transform. </span>Elle peut prendre ces valeurs :</p>
+    <p><strong><span style="color: green;">uppercase :</span></strong>tout le texte sera écrit en majuscules.</p>
+    <p><strong><span style="color: green;">lowercase :</span></strong>tout le texte sera en minuscules.</p>
+    <p><strong><span style="color: green;">capitalize :</span></strong>la première lettre de chaque mot sera en
+        majuscules.</p>
+    <p class="mb-5"><strong><span style="color: green;">none :</span></strong>pas de transformation (par défaut).</p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">CSS:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code1">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<code><span style="color: red;">h1</span>{
+  <span style="color: green;">text-align: </span><span style="color: blue;">center;</span>
+  <span style="color: green;">font-family: </span><span style="color: blue;">Arial, "Times New Roman", Verdana, serif;</span> 
+  <span style="color: green;">text-transform: </span><span style="color: blue;">capitalize; </span>
+  <span style="color: red;">/* Les premières lettres des mots du titre seront en majuscules */</span>
+}</code></pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

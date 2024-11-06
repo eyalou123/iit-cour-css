@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+  <h1 stborder: 2PX solid black; class="text-green-500 font-bold">
+    Style externe :
+  </h1>
+  <p>
+    Pour relier une feuille de styles externe à un fichier HTML,
+    vous utiliserez la balise &lt;link&gt;dans l’entête de ce fichier
+    (ici, la feuille de styles a pour nom design.css) :</p>
+  <p>
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">HTML:</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code1">📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code1" class="text-gray-300 text-base mt-0 p-2"
+          style="white-space: pre-wrap"><span style="color: red;">&lt;link</span><span style="color: blue;">rel</span>=<span style="color: green;">"stylesheet" </span><span style="color: blue;">href</span>=<span style="color: green;">"design.css"</span><span style="color: red;">/&gt;</span></code></pre>
+      </div>
+    </div>
+  </div>
+
+  <ol class="list-decimal list-inside" style="margin-top: 25px">
+    <li>La balise <span style="color: red;">&lt;link</span> avertit le navigateur qu’il doit chercher
+      un document situé à l’extérieur de la page HTML.</li>
+    <li>L’attribut <span style="color: blue;">rel</span>= <span style="color: green;">"stylesheet"</span> précise que le
+      document en
+      question est une feuille de style externe</li>
+    <li>L'attribut <span style="color: blue;">rel</span> indique l’emplacement du fichier CSS à
+      utiliser.</li>
+  </ol>
+
+  <div class="flex items-center justify-center h-screen">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-gray-400 text-base">HTML:</span>
+            <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+              data-clipboard-target="#code2">📋 Copy
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+
+            <pre id="code2" class="text-yellow-400 font-mono whitespace-pre-wrap">
+<span class="text-green-400 font-mono">&lt;style&gt;</span>
+  p {
+    margin-left: 20px;
+    color: yellow;
+  }
+  body {
+    background-color: #000000;
+  }
+<span class="text-green-400 font-mono">&lt;/style&gt;</span></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-3xl text-gray-700">⬇️</div>
+      <div class="bg-white text-gray-800 p-3 rounded-lg shadow-md max-w-lg text-center">
+        Here we first create two files: one for CSS (mystyle.css) and another for HTML (homepage.html).
+      </div>
+
+      <div class="text-3xl text-gray-700">⬇️</div>
+
+      <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-gray-400 text-base">HTML:</span>
+            <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+              data-clipboard-target="#code3">📋 Copy
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <pre id="code3" class="text-yellow-400 font-mono whitespace-pre-wrap">
+<span class="text-green-400 font-mono">&lt;html&gt;</span>
+<span class="text-white">&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;How to add CSS&lt;/h1&gt;
+  &lt;p&gt;This is my first code&lt;/p&gt;
+&lt;/body&gt;</span>
+<span class="text-green-400 font-mono">&lt;/html&gt;</span></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-3xl text-gray-700">⬇️</div>
+      <div class="bg-white text-gray-800 p-3 rounded-lg shadow-md max-w-lg text-center">
+        Add the CSS page to the HTML page using the <code class="bg-gray-200 p-1 rounded">link</code> tag.
+      </div>
+    </div>
+  </div>
+  <img src="images/1.png" alt="1">
+  <div class="p-6 bg-white rounded-lg shadow-lg">
+    <h2 class="text-xl font-semibold mb-4">Avantages</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li class="flex items-center">
+        <span class="mr-2 text-green-500">✔️</span>
+        Vous pouvez utiliser le même fichier .css pour plusieurs pages
+      </li>
+      <li class="flex items-center">
+        <span class="mr-2 text-green-500">✔️</span>
+        Simplifier la maintenance de la mise en forme du site web
+      </li>
+    </ul>
+  </div>
+
+
+
+</body>
+
+</html>

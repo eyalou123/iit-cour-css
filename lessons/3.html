@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+  <h1 class="text-green-500 font-bold">Local dans la balise:</h1>
+  <p>
+    Pour définir des propriétés CSS dans une balise, vous utiliserez
+    l’attribut <span class="text-custom-orange">style</span> :
+  </p>
+  <p class="mb-5">
+    &lt;balise <span style="color: orange">style</span>="propriété1: valeur1;
+    ...; propriétéN: valeurN;"&gt;
+  </p>
+  <p
+    class="mb-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+    Example :     
+  </p>
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">HTML:</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code1">
+          📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<code>&lt;h2 style="font-family:Verdana; font-size: 18px;"&gt;
+    Ce titre est en Verdana corps 18
+&lt;/h2&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

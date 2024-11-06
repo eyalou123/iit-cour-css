@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h1 class="text-green-500 mb-5"><strong> Les couleurs </strong></h1>
+
+    <div style="display: flex; align-items: flex-start;">
+        <div style="margin-right: 5px;">
+            <p style="margin: 0;">La propriété qui permet de changer la couleur du texte est <span
+                    style="color: red; font-weight: bold;">color</span>.</p>
+            <p style="margin: 0;"><span style="color: blue; font-weight: bold;">Voici quelques</span> couleurs que vous
+                pouvez utiliser en tapant simplement leur nom :</p>
+        </div>
+        <table border="0" cellspacing="0" cellpadding="5"
+            style="border-collapse: collapse; border: 2px solid black; width: 250px; margin-left: 20px;">
+            <tr>
+                <th style="border: 2px solid black; padding: 5px; width: 100px;">Couleur</th>
+                <th style="border: 2px solid black; padding: 5px; width: 150px;">Aperçu</th>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">white</td>
+                <td style="background-color: white; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">silver</td>
+                <td style="background-color: silver; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">gray</td>
+                <td style="background-color: gray; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">black</td>
+                <td style="background-color: black; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">red</td>
+                <td style="background-color: red; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">maroon</td>
+                <td style="background-color: maroon; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">lime</td>
+                <td style="background-color: lime; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">green</td>
+                <td style="background-color: green; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">yellow</td>
+                <td style="background-color: yellow; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">olive</td>
+                <td style="background-color: olive; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">blue</td>
+                <td style="background-color: blue; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">navy</td>
+                <td style="background-color: navy; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">fuchsia</td>
+                <td style="background-color: fuchsia; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">purple</td>
+                <td style="background-color: purple; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">aqua</td>
+                <td style="background-color: aqua; height: 30px; border: 2px solid black;"></td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid black; padding: 5px;">teal</td>
+                <td style="background-color: teal; height: 30px; border: 2px solid black;"></td>
+            </tr>
+        </table>
+    </div>
+    <p
+        class="my-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+        Example :
+    </p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">HTML:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code1">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">h1</span> <span style="color: green;">{</span>
+    <span style="color: green;">text-align</span>:
+    <span style="color: blue;">center</span>; 
+    <span style="color: green;">font-family</span>:
+    <span style="color: blue;">Arial, "Arial Black", "Times New Roman", serif</span>;
+        <span style="color: green;">text-decoration</span>: 
+        <span style="color: blue;">underline</span>; <span style="color: green;">color</span>: 
+        <span style="color: blue;">green</span>;
+        <span style="color: red">/* Le titre en vert */</span>
+<span style="color: green;">}</span>
+<span style="color: red;">p</span> <span style="color: green;">{</span>
+    <span style="color: green;">text-indent</span>:
+    <span style="color: blue;">20px</span>; 
+    <span style="color: green;">color</span>:
+    <span style="color: blue;">blue</span>;
+        <span style="color: red;">/* Les paragraphes en bleu */</span>
+<span style="color: green;">}</span>
+<span style="color: red;">strong</span> <span style="color: green;">{</span>
+    <span style="color: green;">color</span>:
+    <span style="color: blue;">red</span>; 
+    <span style="color: green;">text-decoration</span>:
+    <span style="color: blue;">blink</span>; 
+    <span style="color: red;">/* ... et les mots importants en rouge clignotant ! */</span>
+<span style="color: green;">}</span>
+                </code></pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

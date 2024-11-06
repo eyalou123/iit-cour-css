@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h2 style="color: blueviolet;" class="mb-2"><strong> Police du texte </strong></h2>
+    <p class="mb-5">
+        La propriété CSS qui permet d'indiquer la police est : <br>
+        <span style="color: red;">font-family</span> <br>
+        Vous devez indiquer le nom de la police comme ceci : <br>
+        <span style="color: red;">font-family:police;</span> <br>
+        Pour éviter qu'il n'y ait de problème si l'internaute n'a pas
+        la même police que vous, on met en général <strong>plusieurs</strong>
+        noms de police, séparés par des virgules : <br>
+        <span style="color: red;">font-family:police1, police2, police3, police4;</span><br>
+        Le navigateur essaiera d'abord de mettre la police1.
+        S'il ne l'a pas, il essaiera de mettre la police2. S'il ne l'a
+        pas, il essaiera la police3 et ainsi de suite.
+    </p>
+    <p class="mb-5">
+        Voici une liste de polices qui fonctionnent bien sur la plupart
+        des navigateurs :
+    </p>
+    <p class="mb-5">
+        <span style="color:red ;">Arial</span><br>
+        <span style="color:red ;">Arial Black</span><br>
+        <span style="color:red ;">Comic Sans MS</span><br>
+        <span style="color:red ;">Courier New</span><br>
+        <span style="color:red ;">Georgia</span><br>
+        <span style="color:red ;">Impact</span><br>
+        <span style="color:red ;">Times New Roman</span><br>
+        <span style="color:red ;">Trebuchet MS</span><br>
+        <span style="color:red ;">Verdana</span><br>
+    </p>
+    <p
+        class="mb-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+        Example :     
+    </p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">HTML:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code3">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code3" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">h1</span>&nbsp;{
+  <span style="color: blue;">font-family:</span>&nbsp;<span style="color: green;">"Arial Black"</span>, Arial, Verdana, serif;</span>
+  /* On essaie d'avoir Arial Black en priorité */
+}</pre>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">HTML:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code3">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code3" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">h1</span>&nbsp;{
+  <span style="color: blue;">font-family:</span>&nbsp;<span style="color: green;">"Arial Black"</span>, Arial, Verdana, serif;</span>
+  /* On essaie d'avoir Arial Black en priorité */
+}
+<span style="color: red;">p</span>&nbsp;{
+  <span style="color: blue;">font-family:</span>&nbsp;<span style="color: green;">"Comic Sans MS", "Trebuchet MS", Georgia, serif;</span>
+}</pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

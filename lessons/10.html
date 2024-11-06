@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+  <h1 class="text-green-500"><strong>Imbrications de balises</strong></h1>
+  <ul class="list-disc list-inside" style="margin-top: 25px">
+    <li>
+      <span style="color: #000080;"><strong>div, p:</strong></span> <br>
+      Sélectionne tous les éléments &lt;div&gt; et tous les éléments &lt;p&gt;.
+    </li>
+    <li>
+      <span style="color: #000080;"><strong>div p:</strong></span> <br>
+      Sélectionne tous les éléments &lt;p&gt; dans les éléments &lt;div&gt;.
+    </li>
+    <li>
+      <span style="color: #000080;"><strong>div> p:</strong></span> <br>
+      Sélectionne tous les éléments &lt;P&gt; dont le parent est un
+      élément &lt;div&gt;.
+    </li>
+    <li>
+      <span style="color: #000080;"><strong>div+ p:</strong></span> <br>
+      Sélectionne tous les éléments &lt;P&gt;placés immédiatement
+      après les éléments &lt;div&gt;.
+    </li>
+    <li>
+      <span style="color: #000080;"><strong>div~ p:</strong></span> <br>
+      Sélectionne tous les éléments &lt;P&gt;précédés d'un élément &lt;div&gt;.
+    </li>
+          
+  </ul>
+</body>
+
+</html>

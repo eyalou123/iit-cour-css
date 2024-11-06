@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h2 style="color: blueviolet;" class="mb-2"><strong> L'indentation: la mise en retrait du texte </strong></h2>
+    <p class="mb-5">
+        Cela permet par exemple de faire commencer un paragraphe un peu plus à droite. <br>
+        On utilise la propriété <span style="color: red;">text-indent</span><br>
+        On doit indiquer quelle est la taille du retrait : on peut
+        le faire en pixels, en centimètres, en millimètres...
+    </p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">HTML:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code5">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code5" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">p</span>{
+  <span style="color: green;">text-indent:</span>&nbsp;<span style="color: blue;">30px;</span>
+  /* Les paragraphes commenceront 30 pixels sur la droite */
+  <span style="color: green;">text-align:</span>&nbsp;<span style="color: blue;">justify;</span>
+  /* Ils seront justifiés */
+  <span style="color: green;">font-size:</span>&nbsp;<span style="color: blue;">large;</span>
+}</pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

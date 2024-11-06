@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="../scripts.js"></script>
+  <style>
+    .bloc_relatif {
+      position: relative;
+      border: 1px solid black;
+      padding: 10px;
+      width: 85%;
+    }
+  </style>
+</head>
+
+<body class="text-2xl p-3">
+  <h1 class="text-green-500"><strong>Les balises universelles</strong></h1>
+  <p>Appliquer une class (ou un id) à certains mots qui ne sont pas
+    entourés par des balises.</p>
+  <p
+    class="my-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+    Example :     
+  </p>
+  <p>modifier uniquement “grand père” dans le
+    paragraphe suivant :</p>
+  <p><span style="color: red;">&lt;p&gt;</span>
+    Comme l’a dit grand père un certain 20 juillet 1969...
+    <span style="color: red;">&lt;/p&gt;</span>
+  </p>
+  <p><span style="color: red;">&lt;span&gt; &lt;/span&gt;</span>
+    : c'est une balise de type <span style="color: blue;"><strong>inline</strong></span>
+    , c'est une balise qui se met à l'intérieur d'un paragraphe, comme <br>
+    <span style="color: red;">&lt;strong&gt; &lt;em&gt; &lt;q&gt;</span>
+  </p>
+  <p>
+    <span style="color: red;">&lt;div&gt; &lt;/div&gt;</span>
+    : c'est une balise de type block. Comme <span style="color: red;">&lt;p&gt;</span> ,
+    <span style="color: red;">&lt;h1&gt;</span> etc... Elle crée un nouveau <span
+      style="color: blue;"><strong>bloc</strong></span> dans la page, et
+    provoque donc obligatoirement un retour à la ligne.
+  </p> <br>
+  <div class="bloc_relatif mb-5">
+
+    <p>Sous le pont Mirabeau coule la Seine Et nos amours Faut-il qu'il m'en souvienne</p>
+    <div style="background-color: blue;">div class="bloc_relatif"</div>
+    <p>La joie venait toujours après la peine</p>
+  </div>
+  <div class="bloc_relatif">
+
+    <p>Sous le pont Mirabeau coule la Seine Et nos amours Faut-il qu'il m'en souvienne
+      <span style="background-color: blue; border: 2px solid black;">Bloc class="bloc_relatif"</span>ie venait toujours
+      <br> après la peine
+    </p>
+
+  </div>
+  <p
+    class="my-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+    Example :     
+  </p>
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">HTML:</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code1">📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">&lt;p&gt;</span>Comme l'a dit <span style="color: red;">&lt;span</span> <span style="color: blue;">class</span>=<span style="color: green;">"nom"</span>&gt;Neil
+Armstrong <span style="color: red;">&lt;/span&gt;</span> un certain
+20 juillet 1969...<span style="color: red;">&lt;/p;&gt;</span></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">CSS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code2">📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code2" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">.nom </span>{ 
+  <span style="color: blue;">Color :</span>
+  <span style="color: green;">blue;</span>
+}</pre>
+      </div>
+    </div>
+  </div>
+  Donc pour définir un style <strong> applicable seulement à une partie
+    de la page</strong> et non plus à une balise &lt;HTML&gt; précise, vous
+  pouvez placer un attribut style dans une balise <strong>&lt;div&gt;</strong> (division)
+  ou <strong>&lt;span&gt;</strong>(fusion). <br>
+  Ces balises définissent une zone de texte donnée, donc tout ce
+  qui se trouve entre la balise de début et la balise de fin adopte
+  le style défini.
+  </p>
+</body>
+
+</html>

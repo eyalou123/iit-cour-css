@@ -1,0 +1,54 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+  <h1 class="text-green-500"><strong>L'attribut id </strong></h1>
+  <p>Il fonctionne exactement de la même manière que <span style="color: red;">class</span>,
+    à un détail prêt :</p>
+  <p style="color: orange;">il ne peut être utilisé qu’une fois.</p>
+  <p>En pratique, nous ne mettrons des <span style="color: red;">"id"</span>
+    que sur des éléments qui sont uniques sur votre page,
+    comme par exemple le logo : <br>
+
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">HTML:</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code1">📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">&lt;img</span> <span style="color: blue;">src</span>=<span style="color: green;">"images/logo.png"</span> <span style="color: blue;">id</span>=<span style="color: green;">"logo"</span> <span style="color: red;">/></span></pre>
+      </div>
+    </div>
+  </div>
+  Dans le CSS, ce n'est pas un point que vous devez mettre avant le nom de l'id,
+  mais un dièse (#):
+  </p>
+  <div class="flex items-center justify-center space-x-6 mt-2">
+    <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-gray-400 text-base">HTML:</span>
+        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+          data-clipboard-target="#code2">📋 Copy
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <pre id="code2" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">#</span><span style="color: green;">logo </span>{
+  /* Mettez les propriétés CSS ici */
+}</pre>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

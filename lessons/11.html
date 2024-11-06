@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h2 style="color: blueviolet;" class="mb-2"><strong>Taille du texte</strong></h2>
+    <p class="mb-5">
+        <strong>En pixels : </strong> c'est une façon très précise d'indiquer la taille du texte.
+    </p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">HTML:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code1">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code1" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">p&nbsp;</span>{
+  <span style="color: green;">font-size:</span>&nbsp;<span style="color: blue;">14px;</span>&nbsp;&nbsp;&nbsp;<span style="color: red;">/* Paragraphes de 14 pixels */</span>
+}
+<span style="color: red;">h1&nbsp;</span>{
+  <span style="color: green;">font-size:</span>&nbsp;<span style="color: blue;">22px;</span>&nbsp;&nbsp;&nbsp;<span style="color: red;">/* Titres de 22 pixels */</span>
+}</pre>
+            </div>
+        </div>
+    </div>
+
+    <p class="mb-5">
+        <strong>En pourcentage :</strong> <br>
+    </p>
+    <p>
+        Si vous indiquez "100%", le texte aura une taille "normale".
+        Si vous mettez "130%", le texte aura une taille correspondant
+        à 130% de la taille normale.
+    </p>
+    <div style="display: flex;">
+        <div style="width: 50%; padding: 10px;">
+            <h3 class="mb-5">En donnant une valeur relative :</h3>
+            <p><span style="color: red;">xx-small :</span> minuscule</p>
+            <p><span style="color: red;">x-small :</span> très petit</p>
+            <p><span style="color: red;">small :</span> petit</p>
+            <p><span style="color: red;">medium :</span> moyen</p>
+            <p><span style="color: red;">large :</span> grand</p>
+            <p><span style="color: red;">x-large :</span> très grand</p>
+            <p><span style="color: red;">xx-large :</span> plus grand que le x-large</p>
+        </div>
+        <div style="width: 1px; background-color: black; margin: 0 10px;"></div>
+        <div style="width: 50%; padding: 10px;">
+            <p> <strong>En em :</strong> c'est une autre façon d'indiquer de manière relative la taille du texte.</p>
+            <p>On doit indiquer la taille du texte par rapport à la taille normale de la police.</p>
+            <p><span style="color: red;">1em</span> signifie <span style="color: red;">"Taille normale".</span> </p>
+            <div class="flex items-center justify-center space-x-6 mt-2">
+                <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-gray-400 text-base">HTML:</span>
+                        <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                            data-clipboard-target="#code2">📋 Copy
+                        </button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <pre id="code2" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red;">.petit_em&nbsp;</span>{
+  <span style="color: blue;">font-size:<span></span>&nbsp;<span style="color: green;">0.7em;</span>
+}
+<span style="color: red;">.grand_em&nbsp;</span>{
+  <span style="color: blue;">font-size:<span></span>&nbsp;<span style="color: green;">1.3em;</span>
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

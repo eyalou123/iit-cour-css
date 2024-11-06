@@ -1,0 +1,71 @@
+[
+    {
+      "title": "Introduction",
+      "lessons": [
+        { "title": "Définition", "url": "1.html" }
+    ]
+},
+{
+    "title": "Où écrire le style CSS",
+    "lessons": [
+        { "title": "Introduction", "url": "2.html" },
+        { "title": "Local dans la balise", "url": "3.html" },
+        { "title": "Style interne", "url": "4.html" },
+        { "title": "Style externe", "url": "5.html" }
+      ]
+    },
+    {
+      "title": "Définition de base",
+      "lessons": [
+        { "title": "Introduction", "url": "6.html" },
+        { "title": "Utiliser les classes", "url": "7.html" },
+        { "title": "L'attribut id", "url": "8.html" },
+        { "title": "Les balises universelles", "url": "9.html" },
+        { "title": "Imbrications de balises", "url": "10.html" }
+      ]
+    },
+    {
+      "title": "Texte Style",
+      "lessons": [
+        { "title": "Taille du texte", "url": "11.html" },
+        { "title": "Police du texte", "url": "12.html" },
+        { "title": "Alignement du texte", "url": "13.html" },
+        { "title": "L'indentation", "url": "14.html" },
+        { "title": "Effets de style", "url": "15.html" },
+        { "title": "Les majuscules en CSS", "url": "16.html" },
+        { "title": "La décoration du texte", "url": "17.html" }
+      ]
+    },
+    {
+      "title": "Les couleurs",
+      "lessons": [
+        { "title": "Introduction", "url": "18.html" },
+        { "title": "Notation hexadécimale", "url": "19.html" },
+        { "title": "notation RGB", "url": "20.html" }
+      ]
+    },
+    {
+      "title": "Style des liens",
+      "lessons": [
+        { "title": "Introduction", "url": "21.html" },
+        { "title": "Pseudo-classes", "url": "22.html" }
+      ]
+    },
+    {
+      "title": "Première lettre et première ligne",
+      "lessons": [
+        { "title": "Introduction", "url": "23.html" },
+        { "title": "La première lettre", "url": "24.html" },
+        { "title": "La première ligne", "url": "25.html" }
+      ]
+    },
+    {
+      "title": "Style des listes",
+      "lessons": [
+        { "title": "Retrait", "url": "26.html" },
+        { "title": "Type des puces", "url": "27.html" },
+        { "title": "Type de la numérotation", "url": "28.html" }
+      ]
+    }
+  ]
+  

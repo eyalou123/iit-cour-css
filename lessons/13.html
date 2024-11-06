@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+
+    <h2 style="color: blueviolet;" class="mb-5"><strong> Alignement du texte </strong></h2>
+    <p>
+        On utilise la propriété <span style="color: red;">text-align,</span> et on indique l’alignement
+        désiré :
+    </p>
+    <ul class="list-disc list-inside mb-5" style="margin-top: 25px">
+        <li> <span style="color: blue;">left :</span> le texte sera aligné à gauche (c'est le réglage par défaut).</li>
+        <li> <span style="color: blue;">center:</span> le texte sera centré. </li>
+        <li> <span style="color: blue;">right:</span> le texte sera aligné à droite. </li>
+        <li> <span style="color: blue;">justify:</span> le texte sera "justifié".</li>
+    </ul>
+    <p
+        class="mb-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+        Example :     
+    </p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+            <div class="flex justify-between items-center mb-2">
+                <span class="text-gray-400 text-base">HTML:</span>
+                <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+                    data-clipboard-target="#code4">📋 Copy
+                </button>
+            </div>
+            <div class="overflow-x-auto">
+                <pre id="code4" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap">
+<span style="color: red ;">.signature</span>&nbsp;{
+  <span style="color: green;">text-align:</span>&nbsp;<span style="color: blue;">right;</span>
+  <span style="color: red;">/* Pour aligner à droite ma signature */</span>
+  <span style="color: green;">font-family:</span>&nbsp;<span style="color: blue;">"Comic Sans MS", Georgia, "Times New Roman", serif;</span>
+  <span style="color: green;">font-size:</span>&nbsp;<span style="color: blue;">80%;</span>
+}</pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

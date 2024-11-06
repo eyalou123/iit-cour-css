@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+    <h1 class="text-3xl font-bold underline text-red-600 mb-6 mt-2">
+        Style des listes
+    </h1>
+    <h2 style="color: blueviolet;" class="mb-2 font-bold">Retrait</h2>
+    <p>La propriété <span style="color: red; font-weight: bold;">list-style-position</span> permet d'indiquer si on veut
+        que la liste soit mise en retrait ou non.</p>
+    <p><span style="color: red; font-weight: bold;">list-style-position</span> peut prendre 2 valeurs :</p>
+
+    <ul>
+        <li><span style="color: blue;">inside</span> : la liste n'est pas mise en retrait.</li>
+        <li><span style="color: blue;">outside</span> : la liste est mise en retrait (par défaut).</li>
+    </ul>
+    <div
+        style="border: 1px solid gray; padding: 10px; width: 220px; font-family: Arial, sans-serif; font-size: 12px; margin: 20px auto; position: relative; text-align: left; box-shadow: 2px 2px 5px #888888;">
+        <ul style="list-style-position: outside; margin: 0; padding-left: 15px;">
+            <li>Liste<br>à puces</li>
+        </ul>
+        <span
+            style="position: absolute; top: 20px; left: 130px; color: gray; font-size: 12px; font-style: italic;">outside</span>
+        <div style="position: absolute; left: 35px; top: 60px; font-size: 24px; color: gray;">
+            &#x2191;
+        </div>
+        <div style="display: flex; align-items: flex-start; margin-top: 50px;" class="mb-5">
+            <span style="color: gray; font-size: 12px; font-style: italic; padding-right: 5px;">inside</span>
+            <ul style="list-style-position: inside; margin: 0; padding-left: 0;">
+                <li>Liste<br>à puces</li>
+            </ul>
+        </div>
+        <p style="text-align: center; color: gray; font-size: 10px; margin-top: 20px;">Le texte n'est pas mis en retrait
+        </p>
+    </div>
+</body>
+
+</html>

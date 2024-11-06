@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../scripts.js"></script>
+</head>
+
+<body class="text-2xl p-3">
+  <div class="content-container">
+    <div class="intro-text" style="text-align: left;">
+      <p>La définition de base d'un style est simple :</p>
+      <div class="flex items-center justify-center space-x-6 mt-2">
+        <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-gray-400 text-base">CSS:</span>
+            <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+              data-clipboard-target="#code1">📋 Copy
+            </button>
+          </div>
+          <div class="overflow-x-auto">
+            <pre id="code1" class="text-gray-300 text-base mt-0 p-2"
+              style="white-space: pre-wrap"><span style="color: red;">balise {</span><span style="color: blue;">propriété de style</span><span style="color: red;">:</span><span style="color: green;">valeur</span><span style="color: red;">;… }</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/2.png" alt="2">
+    <div>
+      <h1 stborder: 2PX solid black; class="text-green-500 font-bold">
+        Exemples CSS
+      </h1>
+      <p
+        class="my-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+        Example 1:     
+      </p>
+      <p>On veut modifier tous les paragraphes pour qu'ils soient écrits en bleu, avec une taille de 18 pixels.</p>
+
+      <p>Puisque tous les textes des différents paragraphes sont
+        entre les balises &lt;p;&gt;, le code CSS est donc le suivant :</p>
+      <!--wip-->
+      <p><span style="color: blue;">p</span>
+        {<span style="color: rgb(128, 128, 192);">color</span>: blue;
+        <span style="color: rgb(128, 128, 192);">font-size</span>: 18px; }
+      </p>
+      <p
+        class="my-2 text-xl font-extrabold text-black-1000 bg-gray-100 border-l-4 border-green-700 pl-3 pr-1 rounded-md shadow-md inline-flex items-center">
+        Example 2:     
+      </p>
+      <!--wip-->
+      <p><span style="color: blue;">h3</span>
+        {<span style="color: rgb(128, 128, 192);">font-family</span>: Arial;
+        <span style="color: rgb(128, 128, 192);"> font-style</span>: italic }
+      </p>
+      <p>Ici, la balise h3 sera en Arial et en italique. Et dans le
+        document, toutes les balises &lt;h3&gt; auront comme style Arial et italique.</p>
+    </div>
+    <h1 stborder: 2PX solid black; class=" text-green-500 font-bold">
+      Appliquer un style à plusieurs balises
+    </h1>
+    <div class="flex items-center justify-center space-x-6 mt-5">
+      <div class="relative w-auto bg-gray-900 text-white p-4 rounded-md">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-gray-400">CSS:</span>
+          <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+            data-clipboard-target="#code4">📋 Copy
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <pre id="code4" class="text-gray-300"><code>
+<span style="color: red;">h1</span>{
+  <span style="color: blue;">color</span>: <span style="color: green;">red</span>;
+}
+<span style="color: red;">h2</span>{
+  <span style="color: blue;">color</span>: <span style="color: green;">red</span>;
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="text-blue-500 text-3xl">➔</div>
+
+      <div class="relative w-auto bg-gray-900 text-white p-4 rounded-md">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-gray-400">CSS:</span>
+          <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+            data-clipboard-target="#code5">📋 Copy
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <pre id="code5" class="text-gray-300"><code>
+<span style="color: red;">h1, h2</span> {
+  <span style="color: blue;">color</span>:<span style="color: green;">red</span>;
+}</code></pre>
+        </div>
+      </div>
+    </div>
+    <h1 stborder: 2PX solid black; class=" text-green-500 font-bold mt-5">
+      Des commentaires dans du CSS
+    </h1>
+    <p>Pour faire un commentaire, vous tapez <span style="color: blue;">/*</span> , suivi de votre
+      commentaire, puis <span style="color: blue;">*/</span> pour terminer votre commentaire.</p>
+    <div class="flex items-center justify-center space-x-6 mt-2">
+      <div class="relative w-auto bg-gray-900 text-white p-3 rounded-md max-w-3xl">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-gray-400 text-base">CSS:</span>
+          <button class="code bg-gray-800 text-base hover:bg-gray-700 text-gray-300 px-3 py-1 rounded-md"
+            data-clipboard-target="#code6">
+            📋 Copy
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <pre id="code6" class="text-gray-300 text-base mt-0 p-2" style="white-space: pre-wrap"><code>p {
+  <span style="color: green;">color:</span><span style="color: blue;"> blue; /*</span> Les paragraphes seront bleus*/
+  <span style="color: green;">font-size:</span><span style="color: blue;"> 18px;</span>; /* La taille de 18 pixels me semble pas mal<span style="color: blue;">*/</span>
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
